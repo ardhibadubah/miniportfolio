@@ -1,11 +1,9 @@
-import { Hero, NavigationBar } from './components';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
     <div>
-      <NavigationBar />
-      <Hero />
-      <h1>Project</h1>
+      <HomePage />
     </div>
   );
 }
