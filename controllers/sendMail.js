@@ -9,8 +9,8 @@ module.exports = {
             port: 465,
             secure: true,
             auth: {
-                user: process.env.EMAIL,
-                pass: process.env.PASS_EMAIL
+                user: "abecedeade@gmail.com",
+                pass: "rioriorio"
             }
         })
         
