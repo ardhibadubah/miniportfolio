@@ -1,10 +1,6 @@
-import React, { useState } from 'react';
-import { Button, Container, Nav, Navbar } from 'react-bootstrap';
-import { ModalContact } from '..';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 
 const NavigationBar = () => {
-  const [show, setShow] = useState(false);
-
   return (
     <>
       <Navbar bg='light' fixed='top'>
