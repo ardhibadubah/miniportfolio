@@ -1,2 +1,2 @@
 # Website : https://glints-talk.herokuapp.com
-## This Frontend From API Backend https://github.com/ardhibadubah/miniportfolio/tree/develop
+## This Frontend From API Backend https://github.com/MEKL20/miniportfolio
