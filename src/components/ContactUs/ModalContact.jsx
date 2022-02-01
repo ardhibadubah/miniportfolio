@@ -2,7 +2,6 @@ import axios from 'axios';
 import { useFormik } from 'formik';
 import { useState } from 'react';
 import { Button, FloatingLabel, Form, Modal } from 'react-bootstrap';
-import { toast, ToastContainer } from 'react-toastify';
 import * as Yup from 'yup';
 
 import 'react-toastify/dist/ReactToastify.css';
@@ -48,6 +47,12 @@ const ModalContact = () => {
         })
         .then(() => {
           setShow(false);
+        })
+        .then(() => {
+          formik.values.name = '';
+          formik.values.email = '';
+          formik.values.subject = '';
+          formik.values.message = '';
         })
         .catch((error) => {
           Swal.fire({
@@ -147,18 +152,6 @@ const ModalContact = () => {
             </div>
           </Form>
         </Modal.Body>
-        {/* <Modal.Footer></Modal.Footer> */}
-        <ToastContainer
-          position='bottom-left'
-          autoClose={5000}
-          hideProgressBar
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-        />
       </Modal>
     </>
   );
