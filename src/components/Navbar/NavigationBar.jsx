@@ -9,8 +9,8 @@ const NavigationBar = () => {
             <strong>Dev.</strong>
           </Navbar.Brand>
           <Nav className='ms-auto'>
-            <Nav.Link href='/'>Home</Nav.Link>
-            <Nav.Link href='/'>Contact Us</Nav.Link>
+            {/* <Nav.Link href='/'>Home</Nav.Link>
+            <Nav.Link href='/'>Contact Us</Nav.Link> */}
           </Nav>
         </Container>
       </Navbar>

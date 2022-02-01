@@ -27,8 +27,6 @@ const ModalContact = () => {
     }),
     // Handle Submissions
     onSubmit: (values) => {
-      console.log('form values:', values);
-
       axios
         .post(`${process.env.REACT_APP_BASE_URL}/talk`, {
           name: values.name,
